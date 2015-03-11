@@ -2,6 +2,15 @@
 
 All the boilerplate you need to start coding a simple [Sinatra][1] app.
 
+It gives you the following out of the box:
+
+* Vagrant setup to start development
+* Continuous testing using RSpec and Guard
+* Rack boilerplate
+* Rake boilerplate
+* Procfile for deployment to [Heroku][5]
+* Static homepage styled with Bootstrap
+
 ## Installation
 
 1. Ensure you have ruby 2.1.2 installed
@@ -96,3 +105,4 @@ bundle exec guard
 [2]: http://getbootstrap.com/
 [3]: http://rspec.info/
 [4]: https://github.com/guard/guard
+[5]: https://www.heroku.com/
