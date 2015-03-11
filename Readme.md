@@ -75,6 +75,15 @@ module MyApp
 end
 ~~~
 
+### Testing
+
+[RSpec][3] is included in this setup. Add your specs under `spec`. You can run
+[Guard][4] while developing to automatically run tests:
+
+~~~
+bundle exec guard
+~~~
+
 ## Contributing
 
 1. Fork it ( https://github.com/jrgns/sinatra-startup/fork )
@@ -85,3 +94,5 @@ end
 
 [1]: http://www.sinatrarb.com/
 [2]: http://getbootstrap.com/
+[3]: http://rspec.info/
+[4]: https://github.com/guard/guard
