@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra'
 gem 'sinatra-contrib'
+gem 'rake'
 
 group :test do
   gem 'rspec'
@@ -14,7 +15,6 @@ group :development do
   gem 'rubocop'
   gem 'guard'
   gem 'thin'
-  gem 'rake'
 end
 
 group :production do
