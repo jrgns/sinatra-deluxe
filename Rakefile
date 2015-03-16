@@ -1,4 +1,4 @@
-require 'rspec/core/rake_task'
+require 'rspec/core/rake_task' if ENV['RACK_ENV'] == 'testing'
 
 task default: :spec
 
@@ -8,7 +8,9 @@ task :help do
   system 'rake -T'
 end
 
-# Run with `rake spec`
-RSpec::Core::RakeTask.new(:spec) do |task|
-  task.rspec_opts = ['--color', '--format', 'documentation']
+if ENV['RACK_ENV'] == 'testing'
+  # Run with `rake spec`
+  RSpec::Core::RakeTask.new(:spec) do |task|
+    task.rspec_opts = ['--color', '--format', 'documentation']
+  end
 end
