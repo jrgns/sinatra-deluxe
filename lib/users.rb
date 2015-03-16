@@ -1,4 +1,5 @@
 require 'sinatra/base'
+
 module MyApp
   class Users < Sinatra::Base
     get '/' do
